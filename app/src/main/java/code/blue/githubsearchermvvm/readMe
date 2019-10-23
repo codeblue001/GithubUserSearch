@@ -1,0 +1,33 @@
+1. Add internet permission in the manifest file
+2.Add Dependencies - Retrofit2/Gsonconverter/cardview/recyclerview/Picasso/Material design
+3. Create Pojo files - @SerializedName, @Expose, string variable, getters/setters
+4. Construct API interface - @GET plus relative URL, Call method
+5. Layout - SearchView, recyclerView, item layout(cardview)
+6. Create Searchview event listener
+7. Initiated retrofit call
+8. Create CustomViewHolder and CustomAdaptor(constructor context, userlist, inflate item layout, and set text)
+9. Instatiate recyclerview and adapter, set layout manager/adapter
+10. Create UserDetail activity plus layout
+11. Create user detail item layout
+12. Create user detail pojo file - @SerializedName, @Expose, string variable, getters/setters
+13. Set up cardview onclick listener plus intent
+14. declare and instatiate field variables
+15. add GET method to API interface - @GET plus relative URL, Call method
+16.Instantiate UserDetailpojo file and asign it response.body
+17. create method to pupulate data and set text
+18. Create repo item layout
+19. Create userrepo pojo file plus getters and setters
+20. add user repo get method to the api interface plus string
+21. Initiate user repo retrofit call
+22. create viewholder and adapter for the repo list
+23. Instatiate recyclerview and adapter, set layout manager/adapter
+
+
+ISSUES
+#1 app crashed  due to error Resources$NotFoundException: String resource ID #0x4
+        followers.setText(userDetailPojo.getFollowers());
+        following.setText(userDetailPojo.getFollowing());
+FIX
+#1 connvert to string
+        followers.setText(userDetailPojo.getFollowers().toString());
+        following.setText(userDetailPojo.getFollowing().toString());
